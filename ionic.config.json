@@ -1,0 +1,7 @@
+{
+  "name": "ionic_cep",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
