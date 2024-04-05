@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Rastreador
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-toolbar color="primary">
+  <ion-searchbar color="dark" placeholder="Código do cep..." (ionChange)="localizarCep($event)"></ion-searchbar>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <ion-row>
+    <ion-col col-12>
+      <ion-list>
+        <ion-item>
+          <ion-label *ngIf="correio.logradouro">Logradouro:{{correio.logradouro}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label *ngIf="correio.complemento">Complemento:{{correio.complemento}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label *ngIf="correio.bairro">Bairro:{{correio.bairro}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label *ngIf="correio.localidade">Cidade:{{correio.localidade}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label *ngIf="correio.uf">UF:{{correio.uf}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+  
+
+  
+</ion-content>
